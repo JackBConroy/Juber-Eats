@@ -1,0 +1,60 @@
+header {
+  background-color: #000;
+  color: #fff;
+  .logo {
+    h1 {
+      font-weight: 300;
+      span {
+        font-weight: 600;
+        color: $color-green;
+      }
+    }
+  }
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  .searchBar {
+    margin-left: auto;
+    cursor: pointer;
+  }
+  .header-option {
+    padding-left: 5rem;
+    letter-spacing: 0.6px;
+    display: flex;
+    align-items: center;
+    svg {
+      margin-right: 1rem;
+      display: inline-flex;
+    }
+  }
+  .currentDetails,
+  .searchBar {
+    display: flex;
+  }
+}
+
+.options {
+  padding: 3.5rem 0 1.5rem 0;
+  .options-btn {
+    background: $color-grey;
+    padding: 0.6rem 0.8rem;
+    border-radius: 30px;
+    border: 0;
+    font-family: $font;
+    font-size: 1rem;
+    letter-spacing: 0.6px;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 0.3rem;
+    cursor: pointer;
+    svg {
+      max-width: 20px;
+      margin-right: 0.4rem;
+    }
+    &.selected {
+      background: black;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  width: calc(100% - 120px);
+  margin: auto;
+}
+
+header .logo h1 {
+  font-weight: 400;
+}
+header .logo h1 span {
+  font-weight: 600;
+  color: #3fc060;
+}
+header .container {
+  display: flex;
+  align-items: center;
+}
+header .searchBar {
+  margin-left: auto;
+}
+header .header-option {
+  font-weight: 500;
+  padding-left: 3rem;
+}
+header .currentDetails,
+header .searchBar {
+  display: flex;
+}
+
+.options {
+  padding: 1.2rem;
+}
+.options .options-btn {
+  background: #dddd;
+  padding: 0.8rem 1rem;
+  border-radius: 30px;
+  border: 0;
+  font-family: sans-serif;
+  letter-spacing: 0.6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.options .options-btn.selected {
+  background: #000;
+  color: #fff;
+}
+
+.listings {
+  padding: 2rem 0;
+}
+.listings .header {
+  display: flex;
+  align-items: center;
+}
+.listings .header .header-title h2 {
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+.listings .header .header-title span {
+  color: #545454;
+}
+.listings .header .header-view-options {
+  margin: auto 0 auto auto;
+  display: flex;
+  align-items: center;
+}
+.listings .header .header-view-options .viewAll {
+  color: #3fc060;
+  padding-right: 2rem;
+}
+.listings .header .header-view-options .viewMore .arrow {
+  width: 40px;
+  height: 40px;
+  background: #dddd;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  opacity: 0.3;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.listings .header .header-view-options .viewMore .arrow.dark, .listings .header .header-view-options .viewMore .arrow:hover {
+  opacity: 1;
+}
+.listings .listings-grid .listings-grid-element {
+  width: 33%;
+}
+.listings .listings-grid .listings-grid-element .image {
+  height: 240px;
+}
+.listings .listings-grid .listings-grid-element .image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=/styles.2b96cfcd.css.map */
